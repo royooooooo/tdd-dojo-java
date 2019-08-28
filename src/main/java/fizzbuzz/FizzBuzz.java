@@ -1,3 +1,4 @@
+package fizzbuzz;
 
 public class FizzBuzz {
     public String calculate(int number) {
