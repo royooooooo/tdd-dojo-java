@@ -14,10 +14,6 @@ public class ParkingLog {
         cars.add(car);
     }
 
-    public int getCarSize() {
-        return cars.size();
-    }
-
     public Car getCar() {
         return cars.get(0);
     }
