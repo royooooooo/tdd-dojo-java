@@ -7,9 +7,9 @@ import static org.assertj.core.api.Assertions.assertThat;
 class ParkingLotTest {
     @Test
     void should_take_the_car_and_park_the_car() {
-        ParkingLog parkingLog = new ParkingLog();
+        ParkingLot parkingLot = new ParkingLot();
         Car car = new Car();
-        parkingLog.park(car);
-        assertThat(parkingLog.getCar()).isEqualTo(car);
+        parkingLot.park(car);
+        assertThat(parkingLot.getCar()).isEqualTo(car);
     }
 }

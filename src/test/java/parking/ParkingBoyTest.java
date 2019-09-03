@@ -7,13 +7,13 @@ import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-class GraduateParkingBoyTest {
+class ParkingBoyTest {
 
     @Test
     void should_pick_up_the_car_and_parking_car() {
-        List<ParkingLog> parkingLogs = new ArrayList<>();
-        parkingLogs.add(new ParkingLog());
-        GraduateParkingBoy graduateParkingBoy = new GraduateParkingBoy(parkingLogs);
+        List<ParkingLot> parkingLots = new ArrayList<>();
+        parkingLots.add(new ParkingLot());
+        ParkingBoy graduateParkingBoy = new ParkingBoy(parkingLots);
         Car car = new Car();
         graduateParkingBoy.parking(car);
         assertThat(graduateParkingBoy.takeTheCar()).isEqualTo(car);

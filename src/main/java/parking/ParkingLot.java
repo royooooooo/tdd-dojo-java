@@ -3,10 +3,10 @@ package parking;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ParkingLog {
+public class ParkingLot {
     private List<Car> cars;
 
-    public ParkingLog() {
+    public ParkingLot() {
         cars = new ArrayList<>();
     }
 
